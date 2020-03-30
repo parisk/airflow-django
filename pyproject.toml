@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "airflow-django"
+version = "0.1.0"
+description = "A kit for using Django features, like its ORM, in Airflow DAGs."
+authors = ["Paris Kasidiaris <paris@sourcelair.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.6, <3.8"
+apache-airflow = "^1.10"
+django = ">=2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
